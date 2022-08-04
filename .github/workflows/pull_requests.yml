@@ -1,4 +1,4 @@
-name: GitHub Actions Demo
+name: Pull request workflow
 on: [pull_request]
 jobs:
   Exemple-Pull-Request:
