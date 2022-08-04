@@ -4,4 +4,5 @@ jobs:
   Exemple-Pull-Request:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+      - uses: actions/checkout@v3
+      - run: docker-compose -f docker-compose.jest.yml up --build --remove-orphans --abort-on-container-exit --exit-code-from workshop
